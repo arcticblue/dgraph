@@ -12,7 +12,7 @@ project("dgraph") {
     "project.build.sourceEncoding" to "UTF-8"
   }
 
-  modules("dgraph-model", "dgraph-runner", "dgraph-viewer")
+  modules("dgraph-model", "dgraph-runner", "dgraph-editor")
 
   dependencies {
     compile("org.jetbrains.kotlin:kotlin-stdlib:$kotlinVersion")
