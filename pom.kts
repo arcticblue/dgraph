@@ -21,5 +21,8 @@ project("dgraph") {
   build {
     sourceDirectory("src/main/kotlin")
     testSourceDirectory("/src/test/kotlin")
+    plugins {
+      plugin("com.amashchenko.maven.plugin:gitflow-maven-plugin:1.13.0")
+    }
   }
 }
