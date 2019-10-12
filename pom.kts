@@ -10,13 +10,15 @@ project {
     "kotlin.version" to "1.3.50"
   }
 
-  modules("dgraph-model", "dgraph-runner", "dgraph-editor")
+  modules("dgraph-core", "dgraph-runner", "dgraph-editor")
 
   dependencies {
     compile("org.jetbrains.kotlin:kotlin-stdlib:\${kotlin.version}")
   }
 
   build {
+    sourceDirectory("src/main/kotlin")
+    testSourceDirectory("src/test/kotlin")
     plugins {
       plugin("com.amashchenko.maven.plugin:gitflow-maven-plugin:1.13.0")
     }
